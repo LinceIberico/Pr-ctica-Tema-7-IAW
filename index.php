@@ -1,16 +1,21 @@
 <html>
 <head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="estilos.css">
 </head>
-<body background="php.jpg">
+<body>
+<header>
+	<h1>Gestor de libros</h1>
+	<h2>Una app de Varchar2</h2>
+</header>
+<div class="contenedor_tabla">
 <?php
 
 $conn = mysqli_connect("localhost","root","","biblioteca");
 
 $result = mysqli_query($conn, "SELECT idLibro, ISBN, Titulo, Autor, Puntuacion FROM libro");
 
-echo "<table border='5'>";
-	echo "<tr bgcolor='#0EF10E'>";
+echo "<table class='tabla' border='2'>";
+	echo "<tr>";
 		echo "<th>ISBN</th>";
 		echo "<th>Titulo</th>";
 		echo "<th>Autor</th>";
@@ -18,7 +23,7 @@ echo "<table border='5'>";
 		echo "<th>Opciones</th>";
 	echo "</tr>";
 while ($fila = mysqli_fetch_array($result)) {
-	echo "<tr bgcolor='#99D599'>";
+	echo "<tr>";
 		echo "<td>".$fila["ISBN"]."</td>";
 		echo "<td>".$fila["Titulo"]."</td>";
 		echo "<td>".$fila["Autor"]."</td>";
@@ -38,11 +43,16 @@ while ($fila = mysqli_fetch_array($result)) {
 }
 echo "</table>";
 
+
 mysqli_close($conn);
 
 ?>
 <br/>
-<button onclick="location.href='formulario.html'">AÑADIR</button>
+<button class="boton" onclick="location.href='formulario.html'">AÑADIR</button>
+</div>
 
+<footer>
+	<h3>Realizado por: Adrián Sánchez, Daniel Ruíz y Juan José Moreno</h3>
+</footer>
 </body>
 </html>

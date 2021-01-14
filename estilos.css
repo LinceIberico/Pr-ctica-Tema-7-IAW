@@ -1,0 +1,40 @@
+h1,
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+header {
+    background-color: rgb(0, 126, 175);
+    height: 15vh;
+}
+
+.contenedor_tabla {
+    margin: 0 auto;
+    background-color: rgb(0, 88, 122);
+    height: 50vh;
+}
+
+.formulario_insertar {
+    margin: 0 auto;
+    padding-left: 90vh;
+}
+
+.tabla {
+    margin: 0 auto;
+    left: 200px;
+    top: 50px;
+}
+
+footer {
+    background-color: rgb(0, 126, 175);
+    height: 15vh;
+}
+
+.boton {
+    margin-left: 48%;
+}
