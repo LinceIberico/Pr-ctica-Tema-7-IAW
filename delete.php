@@ -2,7 +2,7 @@
 
 $id = $_POST['idLibro'];
 
-$conn = mysqli_connect("localhost","root","","biblioteca");
+$conn = mysqli_connect("localhost","root","","id15910404_biblioteca");
 
 $sql = "DELETE FROM libro WHERE idLibro=$id";
 
