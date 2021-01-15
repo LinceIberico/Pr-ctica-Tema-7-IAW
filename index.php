@@ -10,7 +10,7 @@
 <div class="contenedor_tabla">
 <?php
 
-$conn = mysqli_connect("localhost","root","","id15910404_biblioteca");
+$conn = mysqli_connect("localhost","id15910404_root","","id15910404_biblioteca");
 
 $result = mysqli_query($conn, "SELECT idLibro, ISBN, Titulo, Autor, Puntuacion FROM libro");
 
