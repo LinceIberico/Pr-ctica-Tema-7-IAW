@@ -7,7 +7,7 @@ $Autor = $_GET["Autor"];
 $Puntuacion = $_GET["Puntuacion"];
 
 
-$conn = mysqli_connect("localhost","root","","biblioteca");
+$conn = mysqli_connect("localhost","root","","id15910404_biblioteca");
 
 $sql = "update libro set ISBN='$ISBN', Titulo='$Titulo', Autor='$Autor', Puntuacion='$Puntuacion' WHERE idLibro=$idLibro";
 
