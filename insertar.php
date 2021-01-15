@@ -4,7 +4,7 @@ $Titulo = $_GET["Titulo"];
 $Autor = $_GET["Autor"];
 $Puntuacion = $_GET["Puntuacion"];
 
-$conn = mysqli_connect("localhost","id15910404_rootroot","","id15910404_biblioteca");
+$conn = mysqli_connect("localhost","id15910404_root","","id15910404_biblioteca");
 $sql = "insert into libro (ISBN, Titulo, Autor, Puntuacion) values ('$ISBN','$Titulo','$Autor','$Puntuacion')";
 $esOk = mysqli_query($conn,$sql);
 	mysqli_close($conn);
